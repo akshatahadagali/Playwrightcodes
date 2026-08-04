@@ -6,7 +6,7 @@ test('selectors', async ({ page }) => {
   await page.pause();
   await page.click ('id=user-name')
   await page.locator('id=user-name').fill('standard_user')
-  //await page.locator('[id="user-name"]').fill ('akshata')
+  await page.locator('[id="user-name"]').fill ('akshata')
  
   //using css selector 
   //#login-button
